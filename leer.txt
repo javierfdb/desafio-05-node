@@ -1,0 +1,52 @@
+Hola Profesor, gusto en saludar
+
+El desafío lo realicé un poco distinto a lo solicitado,
+ya que me base en el diseño dinámico que nos mostró en clase 
+el profe Ignacio.
+
+Por ejemplo para hacer un sort se utiliza la siguiente query:
+--> http://localhost:3000/inventario?limit=36&sort[nombre]=desc
+
+Para hacer filtros (le pedi una joya que pertenezca a la categoria 'anillo' y tenga un stock de 4):
+--> http://localhost:3000/inventario?limit=36&filters[categoria][$eq]=anillo&filters[stock][$eq]=4
+
+Además cree la ruta para obtener cada Joya según su id:
+--> http://localhost:3000/inventario/5
+
+Le pedi a chat GPT que me creara 30 datos de joyas nuevas para la tabla, para hacer crecer un poco la tabla:
+--> 
+INSERT INTO inventario VALUES
+(DEFAULT, 'Collar Star', 'collar', 'plata', 18000 , 3),
+(DEFAULT, 'Collar Moon', 'collar', 'plata', 16000 , 6),
+(DEFAULT, 'Aros Classic', 'aros', 'oro', 10000 , 8),
+(DEFAULT, 'Aros Pearl', 'aros', 'plata', 8000 , 12),
+(DEFAULT, 'Anillo Flower', 'anillo', 'plata', 35000 , 3),
+(DEFAULT, 'Anillo Ruby', 'anillo', 'oro', 50000 , 1),
+(DEFAULT, 'Collar Key', 'collar', 'plata', 22000 , 4),
+(DEFAULT, 'Collar Cross', 'collar', 'oro', 25000 , 3),
+(DEFAULT, 'Aros Starlight', 'aros', 'plata', 9000 , 10),
+(DEFAULT, 'Aros Feather', 'aros', 'oro', 15000 , 6),
+(DEFAULT, 'Anillo Amethyst', 'anillo', 'oro', 45000 , 2),
+(DEFAULT, 'Anillo Promise', 'anillo', 'plata', 28000 , 5),
+(DEFAULT, 'Collar Butterfly', 'collar', 'plata', 19000 , 2),
+(DEFAULT, 'Collar Infinity', 'collar', 'oro', 23000 , 4),
+(DEFAULT, 'Aros Crystal', 'aros', 'oro', 20000 , 3),
+(DEFAULT, 'Aros Flower', 'aros', 'plata', 11000 , 8),
+(DEFAULT, 'Anillo Topaz', 'anillo', 'oro', 48000 , 1),
+(DEFAULT, 'Anillo Love', 'anillo', 'plata', 32000 , 3),
+(DEFAULT, 'Collar Pearl', 'collar', 'plata', 21000 , 5),
+(DEFAULT, 'Collar Leaf', 'collar', 'oro', 27000 , 2),
+(DEFAULT, 'Aros Heart', 'aros', 'plata', 10000 , 12),
+(DEFAULT, 'Aros Hoop', 'aros', 'oro', 18000 , 6),
+(DEFAULT, 'Anillo Diamond', 'anillo', 'oro', 55000 , 1),
+(DEFAULT, 'Anillo Sapphire', 'anillo', 'plata', 38000 , 4),
+(DEFAULT, 'Collar Sun', 'collar', 'plata', 20000 , 3),
+(DEFAULT, 'Collar Ocean', 'collar', 'oro', 24000 , 3),
+(DEFAULT, 'Aros Twist', 'aros', 'plata', 9500 , 10),
+(DEFAULT, 'Aros Moonlight', 'aros', 'oro', 17000 , 6),
+(DEFAULT, 'Anillo Opal', 'anillo', 'oro', 42000 , 2),
+(DEFAULT, 'Anillo Enigma', 'anillo', 'plata', 31000 , 5);
+
+Se comparten variables de entorno.
+
+Saludos profesor.
